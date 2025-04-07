@@ -3,16 +3,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 plt.ion()
-fig, axes = plt.subplots(2, 1, figsize=(10, 7))
+fig, axes = plt.subplots(2, 1, figsize=(12, 7.5))
 plt.tight_layout()
 
 np.random.seed(4)
-centers = [[1, 2], [1, 3.5], [1.5, 2.5]]
+centers = [[0, 2], [-0.3, 3.5], [0.5, 1.5]]
 k = len(centers)
 points, labels = make_blobs(
-    n_samples=250,
+    n_samples=200,
     centers=centers,
-    cluster_std=0.3,
+    cluster_std=0.6,
     random_state=4
 )
 
