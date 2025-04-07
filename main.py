@@ -7,12 +7,12 @@ fig, axes = plt.subplots(2, 1, figsize=(10, 7))
 plt.tight_layout()
 
 np.random.seed(4)
-centers = [[0, 2], [-0.3, 3.5], [0.5, 1.5]]
+centers = [[1, 2], [1, 3.5], [1.5, 2.5]]
 k = len(centers)
 points, labels = make_blobs(
-    n_samples=200,
+    n_samples=250,
     centers=centers,
-    cluster_std=0.6,
+    cluster_std=0.3,
     random_state=4
 )
 
